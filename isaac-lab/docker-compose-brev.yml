@@ -26,8 +26,8 @@ services:
               capabilities: [gpu]
     volumes:
       - /home/ubuntu/docker/isaac-lab/cache/kit:/isaac-sim/kit/cache:rw
-      - ./launch.sh:/workspace/isaaclab/launch.sh
-      - ./livestream_sample.ipynb:/workspace/isaaclab/livestream_sample.ipynb
+      - /home/ubuntu/Launchables/isaac-lab/launch.sh:/workspace/isaaclab/launch.sh
+      - /home/ubuntu/Launchables/isaac-lab/livestream_sample.ipynb:/workspace/isaaclab/livestream_sample.ipynb
     user: root
     working_dir: /workspace/isaaclab
     entrypoint: ["/workspace/isaaclab/launch.sh"]
